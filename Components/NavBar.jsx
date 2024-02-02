@@ -1,6 +1,4 @@
-import React, { useState, useContext } from "react";
-
-//Internal Import
+import React, { useContext, useState } from "react";
 
 import { CrowdFundingContext } from "../Context/CrowdFunding";
 import { Logo, Menu } from "../Components/index";
@@ -12,12 +10,12 @@ const NavBar = () => {
   return (
     <div className="backgroundMain">
       <div
-        className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl
-      md:px-24 lg:px-8"
+        className="px-4 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl 
+        md:px-24 lg:px-8"
       >
         <div className="relative flex items-center justify-between">
           <div className="flex items-center">
-            <a
+            {/* <a
               href="/"
               aria-label="Company"
               title="Company"
@@ -25,7 +23,7 @@ const NavBar = () => {
             >
               <Logo color="text-white" />
               <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase" />
-            </a>
+            </a> */}
             <ul className="flex items-center hidden space-x-8 lg:flex">
               {menuList.map((el, i) => (
                 <li key={i + 1}>
@@ -55,7 +53,6 @@ const NavBar = () => {
               </li>
             </ul>
           )}
-
           <div className="lg:hidden z-40">
             <button
               aria-label="Open Menu"

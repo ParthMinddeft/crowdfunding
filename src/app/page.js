@@ -1,9 +1,13 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import { NavBar, Footer } from "../../Components";
-import { CrowdFundingProvider } from "../../Context/CrowdFunding";
+import {
+  CrowdFundingContext,
+  CrowdFundingProvider,
+} from "../../Context/CrowdFunding";
 
 const page = () => {
+  // const { titleData } = useContext(CrowdFundingContext);
   return (
     <>
       <CrowdFundingProvider>
